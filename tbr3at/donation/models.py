@@ -59,6 +59,7 @@ class Annoucement(models.Model):
     ]
 
 
+    name = models.CharField(max_length=40)
     description = models.TextField()
     image = models.ImageField(upload_to='images/')
     priority = models.CharField(choices=priority_choices, max_length=15)
