@@ -16,7 +16,7 @@ class Item(models.Model):
     condition_choices = [
         ("New", "New"),
         ("Like New", "Like New"),
-        ("Used", "Used"),
+        ("Used", "Used")
     ]
     name = models.CharField(max_length=40)
     description = models.TextField()
