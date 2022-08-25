@@ -6,6 +6,7 @@ from datetime import timedelta
 
 # Create your models here.
 class Category(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=40)
     description = models.TextField()
     image = models.ImageField(upload_to= 'images/')
